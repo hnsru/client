@@ -1,0 +1,10 @@
+{
+  "channel": "beta",
+  "version": "0.1.0",
+  "min_version": "0.1.0",
+  "asset_name": "hnsru.exe",
+  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.0/hnsru.exe",
+  "sha256": "1776f87aba1db8306721284c62d5b3e189d0f41d94e48cd2a6db138c2106ad74",
+  "size": 11002368,
+  "notes": "- Initial public release v0.1.0 (x64)\n- Tactical Glass Visor UI (main menu, HUD, server browser, HUD editor, scoreboard)\n- Split-loop FPS & Reflex-Lite low-latency input\n- Built-in auto-updater (release & -beta channels) and in-game changelog"
+}
