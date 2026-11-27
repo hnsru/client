@@ -1,10 +1,10 @@
 {
   "channel": "release",
-  "version": "0.1.5",
-  "min_version": "0.1.5",
+  "version": "0.1.6",
+  "min_version": "0.1.6",
   "asset_name": "hnsru.exe",
-  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.5/hnsru.exe",
-  "sha256": "7118367a14310c28e06dcbc1eaeef5b7710430aa9803c2d8d7fb4a94a787057f",
-  "size": 11014144,
-  "notes": "## What's New in 0.1.5\n\n### Performance & Diagnostics\n- Deferred automatic config saving (`config.cfg` / `hnsru_user.cfg`) out of active gameplay and removed synchronous write-through disk flushes to prevent mid-game disk stalls.\n- Extended `hnsru_perf_debug` to capture freezes over 1 second (up to 30s), log immediate `hnsru_stall:` breakdowns for any frame spike >= 50 ms, and account for all engine loop phases.\n"
+  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.6/hnsru.exe",
+  "sha256": "d69a7e74c3451571412e92d5712c296c7ec9562d97f7a9ad8e4d11f31905a8e2",
+  "size": 11219456,
+  "notes": "## What's New in 0.1.6\n\n### UI Performance\n- Replaced scoreboard `data-for` DOM rebuilds with an in-place DOM row pool and delegated click listeners.\n- Flattened nested flexbox layout inside `.sb-card` to block/inline-block and throttled background scoreboard/mouse/console UI updates, eliminating 30–113 ms scoreboard FPS drops on 32-player servers.\n\n### Visual & Gameplay Fixes\n- Restored overhead `sprites/voiceicon.spr` speaker icons above talking players (respecting local/server mutes, `scripts/voicemodel.txt` height, third-person, and in-eye observer mode).\n- Fixed `MOVETYPE_FOLLOW` sprite rendering in the GL3 renderer so attached sprites (such as full-flash indicators on semiclipped players) stay visible, keep their own angles/opacity, and follow live parent origin; fixed `kRenderTransTexture` sprite depth mask.\n"
 }
