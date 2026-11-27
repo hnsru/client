@@ -2,6 +2,13 @@
 
 # Changelog
 
+## [0.1.2] — 2026-11-27
+
+### Renderer & Large Maps
+- Fixed `Out of memory` crashes (`csgl3`) when loading large KZ maps: replaced fixed-size renderer memory blocks with dynamically growing arenas, fixed a per-map level allocation leak, and raised lightmap atlas, surface, and texture limits.
+
+---
+
 ## [0.1.1] — 2026-11-27
 
 ### Audio & Voice
