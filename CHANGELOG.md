@@ -2,6 +2,13 @@
 
 # Changelog
 
+## [0.1.4] — 2026-11-27
+
+### Stability & Models
+- Fixed an intermittent crash during gameplay when rendering world/weapon models after a player or corpse goes off-screen (added missing player-state reset and animation sequence/group bounds validation).
+
+---
+
 ## [0.1.3] — 2026-11-27
 
 ### Engine & Custom Maps
