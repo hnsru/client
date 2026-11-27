@@ -1,10 +1,10 @@
 {
   "channel": "release",
-  "version": "0.1.1",
-  "min_version": "0.1.1",
+  "version": "0.1.2",
+  "min_version": "0.1.2",
   "asset_name": "hnsru.exe",
-  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.1/hnsru.exe",
-  "sha256": "49b8f2c553133c5899531dc88b49174ba1a5388b4d88a545f8df059c488bd4ec",
-  "size": 11006464,
-  "notes": "## What's New in 0.1.1\n\n### Audio & Voice\n- Improved SDL2 audio buffering and underrun recovery to eliminate crackling/stuttering (`soundinfo` reports SDL callback frames and underruns).\n- Added optional background mute when unfocused / Alt-Tab (`snd_mute_losefocus`, enabled by default, toggleable in **Options -> Audio**).\n\n### Window & Alt-Tab\n- Fullscreen mode now properly minimizes on Alt-Tab instead of remaining behind other windows.\n\n### HUD, Menus & Console\n- Fixed AMXX menus closing when switching to Spectator.\n- Moved HUD Layout Editor toolbar below `Spectator Banner` and made it draggable by its title bar.\n- Console now keeps your scroll position when scrolled up during active chat/logging, and resumes auto-scroll when scrolled to the bottom or submitting a command.\n\n### Performance\n- Reduced dynamic HUD rendering cost and optimized high-FPS frame pacing overhead.\n"
+  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.2/hnsru.exe",
+  "sha256": "ba115b414e3088ecaff45d0b8a8a4628cf12dafa562bebe377b057745913435b",
+  "size": 11008000,
+  "notes": "## What's New in 0.1.2\n\n### Renderer & Large Maps\n- Fixed `Out of memory` crashes (`csgl3`) on large KZ maps by replacing fixed renderer memory blocks with dynamically growing arenas, fixing a per-level memory leak, and raising lightmap atlas, surface, and texture limits.\n"
 }
