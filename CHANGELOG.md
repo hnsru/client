@@ -2,6 +2,14 @@
 
 # Changelog
 
+## [0.1.5] — 2026-11-28
+
+### Performance & Diagnostics
+- Deferred automatic config saving (`config.cfg` / `hnsru_user.cfg`) out of active gameplay and removed synchronous write-through disk flushes to prevent mid-game disk stalls.
+- Extended `hnsru_perf_debug` to capture freezes over 1 second (up to 30s), log immediate `hnsru_stall:` breakdowns for any frame spike >= 50 ms, and account for all engine loop phases.
+
+---
+
 ## [0.1.4] — 2026-11-27
 
 ### Stability & Models
