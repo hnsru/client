@@ -5,6 +5,7 @@
 Кастомный 64-битный клиент для Counter-Strike 1.6 (HNS / KZ / Surf) с интерфейсом Tactical Glass Visor, split-loop движком, Reflex-Lite и встроенным автообновлением.
 
 - **Страница загрузок и список изменений:** https://hnsru.github.io/client/
+- **История изменений:** [CHANGELOG_RU.md](CHANGELOG_RU.md)
 - **Полный обзор возможностей и настроек:** [docs/ANNOUNCEMENT_RU.md](docs/ANNOUNCEMENT_RU.md)
 - **Релизы:** https://github.com/hnsru/client/releases
 

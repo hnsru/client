@@ -5,6 +5,7 @@
 A custom 64-bit Counter-Strike 1.6 client built for **HNS, KZ, and Surf** — featuring the **Tactical Glass Visor** interface, **Split-Loop** 500+ visual FPS with authentic 100/133 physics, **Reflex-Lite** low-latency input, and built-in automatic updates.
 
 - **Download Page & Live Changelog:** https://hnsru.github.io/client/
+- **Changelog:** [CHANGELOG.md](CHANGELOG.md)
 - **Full Feature Overview:** [docs/ANNOUNCEMENT.md](docs/ANNOUNCEMENT.md)
 - **Releases:** https://github.com/hnsru/client/releases
 
