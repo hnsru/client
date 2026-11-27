@@ -1,10 +1,10 @@
 {
   "channel": "release",
-  "version": "0.1.3",
-  "min_version": "0.1.3",
+  "version": "0.1.4",
+  "min_version": "0.1.4",
   "asset_name": "hnsru.exe",
-  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.3/hnsru.exe",
-  "sha256": "defb17fe83b07c365365c0014bea2ffb9277a73eb3f0f6be7737f4bb876c0937",
-  "size": 11011072,
-  "notes": "## What's New in 0.1.3\n\n### Engine & Custom Maps\n- Fixed crashes when connecting to KZ and custom servers with split-texture (*T.mdl) or non-standard .mdl files, and increased the 64-bit engine memory pool limit to 256 MiB.\n\n### MOTD & Server Compatibility\n- Fixed false Kicked :\"protector_detected\" kicks on DopBan-protected servers: MOTD now preserves explicit http:// pages instead of forcing HTTPS upgrades, allows MOTD cookie verification to finish in the background when the MOTD window is closed quickly, and keeps MOTD cookies working inside embedded frames."
+  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.4/hnsru.exe",
+  "sha256": "00638d0591f07ae6abc630339d6906831d7650acc6a00aaa0c1b175283a7e69e",
+  "size": 11011584,
+  "notes": "## What's New in 0.1.4\n\n### Stability & Models\n- Fixed an intermittent crash during gameplay when rendering world/weapon models after a player or corpse goes off-screen (added missing player-state reset and animation sequence/group bounds validation)."
 }
