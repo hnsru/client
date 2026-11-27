@@ -1,10 +1,10 @@
 {
   "channel": "release",
-  "version": "0.1.6",
-  "min_version": "0.1.6",
+  "version": "0.1.7",
+  "min_version": "0.1.7",
   "asset_name": "hnsru.exe",
-  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.6/hnsru.exe",
-  "sha256": "d69a7e74c3451571412e92d5712c296c7ec9562d97f7a9ad8e4d11f31905a8e2",
-  "size": 11219456,
-  "notes": "## What's New in 0.1.6\n\n### UI Performance\n- Replaced scoreboard `data-for` DOM rebuilds with an in-place DOM row pool and delegated click listeners.\n- Flattened nested flexbox layout inside `.sb-card` to block/inline-block and throttled background scoreboard/mouse/console UI updates, eliminating 30–113 ms scoreboard FPS drops on 32-player servers.\n\n### Visual & Gameplay Fixes\n- Restored overhead `sprites/voiceicon.spr` speaker icons above talking players (respecting local/server mutes, `scripts/voicemodel.txt` height, third-person, and in-eye observer mode).\n- Fixed `MOVETYPE_FOLLOW` sprite rendering in the GL3 renderer so attached sprites (such as full-flash indicators on semiclipped players) stay visible, keep their own angles/opacity, and follow live parent origin; fixed `kRenderTransTexture` sprite depth mask.\n"
+  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.7/hnsru.exe",
+  "sha256": "afc291bf4c8d006e7f0a57e2cd43ff42d4cbaef4ac7fb90bac15bb48423e98be",
+  "size": 11220992,
+  "notes": "## What's New in 0.1.7\n\n### Compatibility & Stability\n- Fixed `custom.hpk` (`hashpak.cpp`) on-disk serialization to use the exact 32-bit GoldSrc `hash_pack_entry_t` layout (144 bytes per entry instead of x64 152 bytes), preventing the `filesystem_stdio.dll` Line 147 (`ret == 0`) assertion crash when launching vanilla 32-bit `hl.exe` after `hnsru.exe`.\n- Added directory and lump offset bounds validation in `hashpak.cpp` so legacy 64-bit `custom.hpk` files from older HNSRU versions are automatically detected and cleaned up on startup.\n"
 }
