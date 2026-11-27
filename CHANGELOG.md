@@ -2,6 +2,16 @@
 
 # Changelog
 
+## [0.1.3] — 2026-11-27
+
+### Engine & Custom Maps
+- Fixed crashes when connecting to KZ and custom servers with split-texture (`*T.mdl`) or non-standard `.mdl` files, and increased the 64-bit engine memory pool limit to 256 MiB.
+
+### MOTD & Server Compatibility
+- Fixed false `Kicked :"protector_detected"` kicks on DopBan-protected servers: MOTD now preserves explicit `http://` pages instead of forcing HTTPS upgrades, allows MOTD cookie verification to finish in the background when the MOTD window is closed quickly, and keeps MOTD cookies working inside embedded frames.
+
+---
+
 ## [0.1.2] — 2026-11-27
 
 ### Renderer & Large Maps
