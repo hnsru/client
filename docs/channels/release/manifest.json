@@ -1,10 +1,10 @@
 {
   "channel": "release",
-  "version": "0.1.7",
-  "min_version": "0.1.7",
+  "version": "0.1.8",
+  "min_version": "0.1.8",
   "asset_name": "hnsru.exe",
-  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.7/hnsru.exe",
-  "sha256": "afc291bf4c8d006e7f0a57e2cd43ff42d4cbaef4ac7fb90bac15bb48423e98be",
-  "size": 11220992,
-  "notes": "## What's New in 0.1.7\n\n### Compatibility & Stability\n- Fixed `custom.hpk` (`hashpak.cpp`) on-disk serialization to use the exact 32-bit GoldSrc `hash_pack_entry_t` layout (144 bytes per entry instead of x64 152 bytes), preventing the `filesystem_stdio.dll` Line 147 (`ret == 0`) assertion crash when launching vanilla 32-bit `hl.exe` after `hnsru.exe`.\n- Added directory and lump offset bounds validation in `hashpak.cpp` so legacy 64-bit `custom.hpk` files from older HNSRU versions are automatically detected and cleaned up on startup.\n"
+  "download_url": "https://github.com/hnsru/client/releases/download/v0.1.8/hnsru.exe",
+  "sha256": "a2dc18b03efd39751366a355e58820004769fb75323081030dee4149fd9399d1",
+  "size": 11221504,
+  "notes": "- Исправлена работа `cl_minmodels` (`cl_min_t`, `cl_min_ct` и модель VIP) в GL3-рендерере (`r_gl3 1`), включая костные аттачи (followers) и тела игроков.\n"
 }
