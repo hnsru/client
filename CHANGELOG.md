@@ -2,6 +2,31 @@
 
 # Changelog
 
+## [0.1.8] — 2026-11-28
+
+### Renderer & Models
+- Fixed `cl_minmodels` (`cl_min_t`, `cl_min_ct`, and VIP model override) not applying when the OpenGL 3 renderer (`r_gl3 1`) is enabled, including bone-merged player attachments and dead player bodies.
+
+---
+
+## [0.1.7] — 2026-11-28
+
+### Vanilla Client Compatibility
+- Fixed `custom.hpk` serialization to use the 32-bit GoldSrc on-disk layout (`144` bytes per entry) so launching vanilla 32-bit `hl.exe` after `hnsru.exe` no longer triggers a `FileSystem_Stdio.cpp:147` assertion crash.
+
+---
+
+## [0.1.6] — 2026-11-28
+
+### Performance & UI
+- Eliminated scoreboard frame spikes on full 32-player servers by pooling scoreboard DOM rows, throttling UI refresh updates, and flattening the scoreboard card layout (reducing worst-case UI frame times from ~114 ms to ~4 ms).
+
+### Sprites & Voice HUD
+- Restored the overhead voice speaker sprite (`sprites/voiceicon.spr`) above talking players.
+- Fixed `MOVETYPE_FOLLOW` sprites (such as AMXX flash-status sprites above blinded players) not appearing or rendering with incorrect depth/angle inheritance in the GL3 renderer.
+
+---
+
 ## [0.1.5] — 2026-11-28
 
 ### Performance & Diagnostics
